@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaHouse } from "react-icons/fa6";
+import Banner from "./Banner";
 
 const links = [
   { name: "", href: "/", icon: <FaHouse className="w-5 h-5" /> },
@@ -39,9 +40,9 @@ export default function NavBar() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
+      <div className="container  mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo Section */}
-        <div className="flex items-center">
+        <div className="flex items-center z-50">
           <Link href="/">
             <Image
               height={60}
@@ -65,8 +66,8 @@ export default function NavBar() {
 
         {/* Menu Items */}
         <ul
-          className={`fixed  md:static lg:flex inset-0 flex flex-col md:flex-row items-center justify-center bg-gray-800 md:bg-transparent md:space-x-8 transform ${
-            isOpen ? "translate-y-0 md:hidden" : "-translate-y-full"
+          className={`fixed md:static lg:flex inset-0 flex flex-col md:flex-row items-left justify-center bg-gray-800 md:bg-transparent md:space-x-8 transform ${
+            isOpen ? "translate-y-0 md:hidden pl-5 items-left" : "-translate-y-full "
           } md:translate-y-0 transition-transform duration-300 md:transition-none`}
         >
           {/* page links */}
@@ -84,13 +85,22 @@ export default function NavBar() {
               </Link>
             </li>
           ))}
-          <li className="p-2 md:p-0">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Quick Enquiry
-            </button>
+          <li className="p-2 md:p-0 ">
+          <button className="relative overflow-hidden  w-36 h-10 text-white px-4 py-2 rounded-full border-2 -mt-2 border-blue-500 group">
+  {/* Text Layer */}
+  <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
+    Quick Enquiry
+  </span>
+
+  {/* Hover Effect Layer */}
+  <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-500   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
+</button>
+
           </li>
         </ul>
       </div>
+{/* Banner slider */}
+<Banner />
     </nav>
   );
 }
