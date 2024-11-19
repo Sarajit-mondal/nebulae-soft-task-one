@@ -54,7 +54,7 @@ export default function NavBar() {
         </div>
 
         {/* Menu Icon */}
-        <div className="lg:hidden z-20">
+        <div className="md:hidden z-20">
           <button onClick={toggleMenu}>
             {isOpen ? (
               <AiOutlineClose className="w-8 h-8 font-extrabold" />
@@ -67,7 +67,9 @@ export default function NavBar() {
         {/* Menu Items */}
         <ul
           className={`fixed md:static lg:flex inset-0 flex flex-col md:flex-row items-left justify-center bg-gray-800 md:bg-transparent md:space-x-8 transform ${
-            isOpen ? "translate-y-0 md:hidden pl-5 items-left" : "-translate-y-full "
+            isOpen
+              ? "translate-y-0 md:hidden pl-5 items-left"
+              : "-translate-y-full "
           } md:translate-y-0 transition-transform duration-300 md:transition-none`}
         >
           {/* page links */}
@@ -86,21 +88,20 @@ export default function NavBar() {
             </li>
           ))}
           <li className="p-2 md:p-0 ">
-          <button className="relative overflow-hidden  w-36 h-10 text-white px-4 py-2 rounded-full border-2 -mt-2 border-blue-500 group">
-  {/* Text Layer */}
-  <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
-    Quick Enquiry
-  </span>
+            <button className="relative overflow-hidden  w-36 h-10 text-white px-4 py-2 rounded-full border-2 -mt-2 border-blue-500 group">
+              {/* Text Layer */}
+              <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
+                Quick Enquiry
+              </span>
 
-  {/* Hover Effect Layer */}
-  <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-500   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
-</button>
-
+              {/* Hover Effect Layer */}
+              <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-500   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
+            </button>
           </li>
         </ul>
       </div>
-{/* Banner slider */}
-<Banner />
+      {/* Banner slider */}
+      <Banner />
     </nav>
   );
 }
