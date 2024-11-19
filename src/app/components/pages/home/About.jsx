@@ -1,7 +1,7 @@
 
 function About() {
   return (
-    <div className='container mx-auto px-4 md:px-8 mt-20'>
+    <div className='max-w-[1180px] mx-auto px-4 md:px-8 mt-20'>
         <h2 className='text-2xl md:text-3xl '>About</h2>
         <span className='inline-block w-20 h-1 bg-blue-500'></span>
         <div className='md:flex items-center justify-between mt-10 space-x-20'>
