@@ -8,7 +8,7 @@ function Service() {
   return (
     <div className="max-w-[1180px] mx-auto px-4 md:px-8 lg:-mt-40">
       {/* Service container */}
-      <section className="grid lg:grid-cols-4 gap-5 mt-5 items-center">
+      <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 items-center">
         {/* Card show */}
         {cardsData.map((column, colIndex) => (
           <div
@@ -85,7 +85,7 @@ const cardsData = [
       title: "Software Development",
       description:
         "Our expert in-house team uses cutting edge technologies to build software and custom web applications that are stunning, robust, and scalable.",
-      image: "https://cdn-icons-png.flaticon.com/128/2010/2010990.png",
+      image: "https://i.ibb.co.com/GcbzBYx/software-development.png",
 
       services: [
         {
@@ -105,7 +105,7 @@ const cardsData = [
       title: "Branding",
       description:
         "Our highly creative team of designers always excels in creating unique brand identity and out-of-the-box designs that speaks on its own!",
-      image: "https://cdn-icons-png.flaticon.com/128/2010/2010990.png",
+      image: "https://i.ibb.co.com/9r7JmVM/branding.png",
       services: [
         {
           titles: [
@@ -127,7 +127,7 @@ const cardsData = [
       title: "UX Design",
       description:
         "Great online experiences happen only when a well planned UX strantegy is visualized with to class design aesthentics; and we do it best.",
-      image: "https://cdn-icons-png.flaticon.com/128/2010/2010990.png",
+      image: "https://i.ibb.co.com/m6c6cYP/web-design.png",
       services: [
         {
           titles: [
@@ -147,7 +147,7 @@ const cardsData = [
       title: "Video Productions",
       description:
         "We create awesome explainer videos of all types, that'd improve your brand story telling & user engagement which results in higher conversions",
-      image: "https://cdn-icons-png.flaticon.com/128/2010/2010990.png",
+      image: "https://i.ibb.co.com/sw2Gyn3/video-marketing.png",
       services: [
         {
           titles: [
@@ -167,7 +167,7 @@ const cardsData = [
       title: "Mobile App",
       description:
         "Our profound knowledge of mobile technologies & frameworks, help us create secure & scalable Mobile Apps with great UX.",
-      image: "https://cdn-icons-png.flaticon.com/128/2010/2010990.png",
+      image: "https://i.ibb.co.com/7trZ3RY/booking.png",
       services: [
         {
           titles: [
@@ -187,7 +187,7 @@ const cardsData = [
       title: "Digital Marketing",
       description:
         "We're a google partner and we offer unique digital marketing solutions that'd load your inbox with inquiries.",
-      image: "https://cdn-icons-png.flaticon.com/128/2010/2010990.png",
+      image: "https://i.ibb.co.com/g9D09mV/social-media.png",
       services: [
         {
           titles: [
@@ -209,7 +209,7 @@ const cardsData = [
       title: "We Development",
       description:
         "Technological expertise coupled with award-winning UX skills is what makes us the leading web development campany in india - and helps us build world class websites and web applications.",
-      image: "https://cdn-icons-png.flaticon.com/128/2010/2010990.png",
+      image: "https://i.ibb.co.com/5vdzrnw/app-development.png",
       services: [
         {
           titles: [
