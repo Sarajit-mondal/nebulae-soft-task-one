@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+h2,h3,h4,p{
+  color: gray;
+}
+
 .before {
   position: relative;
 }

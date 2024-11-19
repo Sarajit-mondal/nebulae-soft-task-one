@@ -27,7 +27,7 @@ export default function Banner() {
       >
        
         {
-            services && services.map((service,inx) => <SwiperSlide key={inx}><p className='text-4xl md:text-6xl text-center'>{service}</p></SwiperSlide>)
+            services && services.map((service,inx) => <SwiperSlide key={inx}><p className='text-4xl md:text-6xl text-center text-white'>{service}</p></SwiperSlide>)
         }
       </Swiper>
     </>
