@@ -5,7 +5,7 @@ function About() {
       <span className="inline-block w-20 h-1 bg-blue-500"></span>
       <div className="md:flex items-center justify-between mt-10 md:space-x-10">
         {/* leftSide */}
-        <div className="w-full md:w-1/2">
+        <div data-aos="fade-right" className="w-full md:w-1/2">
           <p className="text-2xl leading-[60px]">
             We are an international award-winning IT company with 6 offices
             across India, and offers web design, web development and digital
@@ -13,7 +13,7 @@ function About() {
           </p>
         </div>
         {/* right side */}
-        <div className="w-full md:w-1/2 text-xl ">
+        <div data-aos="fade-left" className="w-full md:w-1/2 text-xl ">
           <p>
             Acodez is rated as one of the top web agencies in India by various
             industry magazines and review sites. We have a right blend of

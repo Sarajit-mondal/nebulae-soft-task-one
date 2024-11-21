@@ -18,7 +18,7 @@ function OurWorks() {
           </p>
         </div>
         {/* work Card One */}
-        <div className="md:absolute text-white top-1/2 left-40  -translate-y-1/2 w-full md:w-1/2 md:h-[80%] z-30">
+        <div className="hidden md:block md:absolute text-white top-1/2 left-40  -translate-y-1/2 w-full md:w-1/2 md:h-[80%] z-30">
           <div className="w-full h-full relative">
             <Image
               layout="fill"
@@ -41,7 +41,7 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card Two */}
-        <div className="md:absolute text-white -top-20 right-20 w-full md:w-2/3 md:h-[70%] z-20">
+        <div className="-mt-20 -md:mt-0 md:absolute text-white -top-20 right-20 w-full md:w-2/3 h-96 md:h-[70%] z-20">
           <div className="w-full h-full relative">
             <Image
               layout="fill"
@@ -64,7 +64,10 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card There Bank */}
-        <div className="md:absolute text-white top-30 right-52   w-full md:w-60 md:h-72 z-30">
+        <div
+          data-aos="zoom-in"
+          className="hidden md:block md:absolute text-white top-30 right-52   w-full md:w-60 md:h-72 z-30"
+        >
           <div
             className="w-full h-full relative"
             style={{
@@ -89,10 +92,9 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card four  */}
-        <div className="md:absolute text-white top-2/3 right-0  -translate-y-1/2 w-full md:w-60 md:h-80 z-30">
-          <div
-            className="w-full h-full relative">
-           <Image
+        <div className="hidden md:block md:absolute text-white top-2/3 right-0  -translate-y-1/2 w-full md:w-60 md:h-80 z-30">
+          <div className="w-full h-full relative">
+            <Image
               layout="fill"
               objectFit="center"
               src="https://acodez.in/wp-content/themes/acodez-theme/images/works/webdesign-apml.jpg"
@@ -100,8 +102,8 @@ function OurWorks() {
             />
             {/* website link */}
             <div className="md:absolute left-5 bottom-5 ">
-            <h3 className="text-lg text-black">Corporate Website</h3>
-            <Link
+              <h3 className="text-lg text-black">Corporate Website</h3>
+              <Link
                 href="https://lsin.panasonic.com/"
                 target="_blank"
                 className="text-red-500 text-[12px]"
@@ -112,51 +114,42 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card five  */}
-        <div className="md:absolute text-white top-3/4 right-72  -translate-y-1/2 w-full md:w-56 md:h-64 z-30">
-          <div
-            className="w-full h-full relative">
-        
-            <Link
-                href="https://lsin.panasonic.com/"
-                target="_blank"
-                
-              >
+        <div className="hidden md:block md:absolute text-white top-3/4 right-72  -translate-y-1/2 w-full md:w-56 md:h-64 z-30">
+          <div className="w-full h-full relative">
+            <Link href="https://lsin.panasonic.com/" target="_blank">
               <div className="relative w-64 h-64 group">
-  {/* Static Image */}
-  <img
-    src="https://acodez.in/wp-content/themes/acodez-theme/images/works/panasonic.jpg"
-    alt="Static Image"
-    className="w-full h-full object-cover group-hover:hidden"
-  />
+                {/* Static Image */}
+                <img
+                  src="https://acodez.in/wp-content/themes/acodez-theme/images/works/panasonic.jpg"
+                  alt="Static Image"
+                  className="w-full h-full object-cover group-hover:hidden"
+                />
 
-  {/* GIF Image */}
-  <img
-    src="https://acodez.in/wp-content/themes/acodez-theme/images/works/anchor-gif-3.gif"
-    alt="GIF Animation"
-    className="w-full h-full object-cover hidden group-hover:block"
-  />
-</div>
-
-               
-              </Link>
+                {/* GIF Image */}
+                <img
+                  src="https://acodez.in/wp-content/themes/acodez-theme/images/works/anchor-gif-3.gif"
+                  alt="GIF Animation"
+                  className="w-full h-full object-cover hidden group-hover:block"
+                />
+              </div>
+            </Link>
           </div>
         </div>
-         {/* work Card six  */}
-         <div className="md:absolute text-white top-3/4 left-96  -translate-y-1/2 w-full md:w-44 md:h-56 z-30">
-         <Link href="https://lsin.panasonic.com/"
-                target="_blank"
-                className="text-red-500 text-[12px]"> 
-           <div
-            className="w-full h-full relative">
-           <Image
-              layout="fill"
-              objectFit="center"
-              src="https://acodez.in/wp-content/themes/acodez-theme/images/works/webdesign-90plus.png"
-              alt="Corporate Website banner"
-            />
-           
-          </div>
-
+        {/* work Card six  */}
+        <div className="hidden md:block md:absolute text-white top-3/4 left-96  -translate-y-1/2 w-full md:w-44 md:h-56 z-30">
+          <Link
+            href="https://lsin.panasonic.com/"
+            target="_blank"
+            className="text-red-500 text-[12px]"
+          >
+            <div className="w-full h-full relative">
+              <Image
+                layout="fill"
+                objectFit="center"
+                src="https://acodez.in/wp-content/themes/acodez-theme/images/works/webdesign-90plus.png"
+                alt="Corporate Website banner"
+              />
+            </div>
           </Link>
         </div>
       </section>
