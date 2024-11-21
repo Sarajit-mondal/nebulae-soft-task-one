@@ -18,7 +18,7 @@ function OurWorks() {
           </p>
         </div>
         {/* work Card One */}
-        <div className="md:absolute text-white top-1/2 left-40  -translate-y-1/2 w-full md:w-1/2 md:h-[80%] z-30">
+        <div className=" hidden md:block md:absolute text-white top-1/2 left-40  -translate-y-1/2 w-full md:w-1/2 md:h-[80%] z-30">
           <div className="w-full h-full relative">
             <Image
               layout="fill"
@@ -41,7 +41,7 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card Two */}
-        <div className="md:absolute text-white -top-20 right-20 w-full md:w-2/3 md:h-[70%] z-20">
+        <div className="md:absolute text-white -top-20 right-20 w-full md:w-2/3 h-96 md:h-[70%] z-20">
           <div className="w-full h-full relative">
             <Image
               layout="fill"
@@ -64,7 +64,7 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card There Bank */}
-        <div className="md:absolute text-white top-30 right-52   w-full md:w-60 md:h-72 z-30">
+        <div data-aos="fade-left" className="hidden md:block md:absolute text-white top-30 right-52   w-full md:w-60 md:h-72 z-30">
           <div
             className="w-full h-full relative"
             style={{
@@ -89,7 +89,7 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card four  */}
-        <div className="md:absolute text-white top-2/3 right-0  -translate-y-1/2 w-full md:w-60 md:h-80 z-30">
+        <div className="hidden md:block md:absolute text-white top-2/3 right-0  -translate-y-1/2 w-full md:w-60 md:h-80 z-30">
           <div
             className="w-full h-full relative">
            <Image
@@ -112,7 +112,7 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card five  */}
-        <div className="md:absolute text-white top-3/4 right-72  -translate-y-1/2 w-full md:w-56 md:h-64 z-30">
+        <div className="hidden md:block md:absolute text-white top-3/4 right-72  -translate-y-1/2 w-full md:w-56 md:h-64 z-30">
           <div
             className="w-full h-full relative">
         
@@ -142,7 +142,7 @@ function OurWorks() {
           </div>
         </div>
          {/* work Card six  */}
-         <div className="md:absolute text-white top-3/4 left-96  -translate-y-1/2 w-full md:w-44 md:h-56 z-30">
+         <div className="hidden md:block md:absolute text-white top-3/4 left-96  -translate-y-1/2 w-full md:w-44 md:h-56 z-30">
          <Link href="https://lsin.panasonic.com/"
                 target="_blank"
                 className="text-red-500 text-[12px]"> 
