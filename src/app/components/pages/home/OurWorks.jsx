@@ -18,7 +18,11 @@ function OurWorks() {
           </p>
         </div>
         {/* work Card One */}
+<<<<<<< HEAD
         <div className="hidden md:block md:absolute text-white top-1/2 left-40  -translate-y-1/2 w-full md:w-1/2 md:h-[80%] z-30">
+=======
+        <div className=" hidden md:block md:absolute text-white top-1/2 left-40  -translate-y-1/2 w-full md:w-1/2 md:h-[80%] z-30">
+>>>>>>> 6db667521f7f1c98dfe2299bf0c9c2cf9969a4c5
           <div className="w-full h-full relative">
             <Image
               layout="fill"
@@ -41,7 +45,11 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card Two */}
+<<<<<<< HEAD
         <div className="-mt-20 -md:mt-0 md:absolute text-white -top-20 right-20 w-full md:w-2/3 h-96 md:h-[70%] z-20">
+=======
+        <div className="md:absolute text-white -top-20 right-20 w-full md:w-2/3 h-96 md:h-[70%] z-20">
+>>>>>>> 6db667521f7f1c98dfe2299bf0c9c2cf9969a4c5
           <div className="w-full h-full relative">
             <Image
               layout="fill"
@@ -64,10 +72,14 @@ function OurWorks() {
           </div>
         </div>
         {/* work Card There Bank */}
+<<<<<<< HEAD
         <div
           data-aos="zoom-in"
           className="hidden md:block md:absolute text-white top-30 right-52   w-full md:w-60 md:h-72 z-30"
         >
+=======
+        <div data-aos="fade-left" className="hidden md:block md:absolute text-white top-30 right-52   w-full md:w-60 md:h-72 z-30">
+>>>>>>> 6db667521f7f1c98dfe2299bf0c9c2cf9969a4c5
           <div
             className="w-full h-full relative"
             style={{
@@ -93,8 +105,14 @@ function OurWorks() {
         </div>
         {/* work Card four  */}
         <div className="hidden md:block md:absolute text-white top-2/3 right-0  -translate-y-1/2 w-full md:w-60 md:h-80 z-30">
+<<<<<<< HEAD
           <div className="w-full h-full relative">
             <Image
+=======
+          <div
+            className="w-full h-full relative">
+           <Image
+>>>>>>> 6db667521f7f1c98dfe2299bf0c9c2cf9969a4c5
               layout="fill"
               objectFit="center"
               src="https://acodez.in/wp-content/themes/acodez-theme/images/works/webdesign-apml.jpg"
@@ -115,8 +133,19 @@ function OurWorks() {
         </div>
         {/* work Card five  */}
         <div className="hidden md:block md:absolute text-white top-3/4 right-72  -translate-y-1/2 w-full md:w-56 md:h-64 z-30">
+<<<<<<< HEAD
           <div className="w-full h-full relative">
             <Link href="https://lsin.panasonic.com/" target="_blank">
+=======
+          <div
+            className="w-full h-full relative">
+        
+            <Link
+                href="https://lsin.panasonic.com/"
+                target="_blank"
+                
+              >
+>>>>>>> 6db667521f7f1c98dfe2299bf0c9c2cf9969a4c5
               <div className="relative w-64 h-64 group">
                 {/* Static Image */}
                 <img
@@ -135,6 +164,7 @@ function OurWorks() {
             </Link>
           </div>
         </div>
+<<<<<<< HEAD
         {/* work Card six  */}
         <div className="hidden md:block md:absolute text-white top-3/4 left-96  -translate-y-1/2 w-full md:w-44 md:h-56 z-30">
           <Link
@@ -150,6 +180,24 @@ function OurWorks() {
                 alt="Corporate Website banner"
               />
             </div>
+=======
+         {/* work Card six  */}
+         <div className="hidden md:block md:absolute text-white top-3/4 left-96  -translate-y-1/2 w-full md:w-44 md:h-56 z-30">
+         <Link href="https://lsin.panasonic.com/"
+                target="_blank"
+                className="text-red-500 text-[12px]"> 
+           <div
+            className="w-full h-full relative">
+           <Image
+              layout="fill"
+              objectFit="center"
+              src="https://acodez.in/wp-content/themes/acodez-theme/images/works/webdesign-90plus.png"
+              alt="Corporate Website banner"
+            />
+           
+          </div>
+
+>>>>>>> 6db667521f7f1c98dfe2299bf0c9c2cf9969a4c5
           </Link>
         </div>
       </section>

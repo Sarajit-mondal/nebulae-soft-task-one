@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 function About() {
   return (
     <div className="max-w-[1180px] mx-auto px-4 md:px-8 mt-20">
@@ -5,7 +7,11 @@ function About() {
       <span className="inline-block w-20 h-1 bg-blue-500"></span>
       <div className="md:flex items-center justify-between mt-10 md:space-x-10">
         {/* leftSide */}
+<<<<<<< HEAD
         <div data-aos="fade-right" className="w-full md:w-1/2">
+=======
+        <div data-aos="fade-left" className="w-full md:w-1/2">
+>>>>>>> 6db667521f7f1c98dfe2299bf0c9c2cf9969a4c5
           <p className="text-2xl leading-[60px]">
             We are an international award-winning IT company with 6 offices
             across India, and offers web design, web development and digital
