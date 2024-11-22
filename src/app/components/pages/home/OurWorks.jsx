@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import OurClient from "./OurClient";
 
 function OurWorks() {
   return (
@@ -153,6 +154,8 @@ function OurWorks() {
           </Link>
         </div>
       </section>
+      {/* ourclient company logo */}
+      <OurClient />
     </div>
   );
 }
