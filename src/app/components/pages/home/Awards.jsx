@@ -43,7 +43,7 @@ function Awards() {
         {/* right side */}
         <div className="w-full md:w-1/2 block md:relative">
           {/* awards */}
-          <div className="inline-block md:absolute  w-full shadow-md md:w-2/3 md:h-[500px] lg:h-96 bg-white p-6 md:top-2/4 md:-translate-y-2/4 left-10">
+          <div className="inline-block md:absolute  w-full shadow-md md:w-2/3 md:h-[500px] lg:h-96 bg-white p-6 md:top-2/4 left-10 md:-translate-y-2/4 ">
             <h3 className="text-xl ">16 Awards</h3>
 
             {/* Awards One */}
@@ -102,7 +102,10 @@ function Awards() {
             }}
           >
             {/* all company */}
-            <div className="flex flex-wrap h-full items-center justify-center gap-5">
+            <div
+              data-aos="fade-left"
+              className="flex flex-wrap h-full items-center justify-center gap-5"
+            >
               {companiesLogo.map((company, inx) => (
                 <div
                   key={inx}

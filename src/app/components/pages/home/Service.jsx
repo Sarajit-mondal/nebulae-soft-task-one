@@ -12,6 +12,7 @@ function Service() {
         {/* Card show */}
         {cardsData.map((column, colIndex) => (
           <div
+            data-aos="fade-up"
             key={colIndex}
             className={`flex flex-col gap-5 ${colIndex === 1 && "lg:mt-72"}`}
           >
