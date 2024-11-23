@@ -21,31 +21,33 @@ export default function OurClient() {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
+       
         breakpoints={{
+          440: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
           640: {
-            slidesPerView: 2,
-            spaceBetween: 5,
+            slidesPerView: 3,
+            spaceBetween: 10,
           },
           768: {
-            slidesPerView: 5,
-            spaceBetween: 5,
+            slidesPerView: 4,
+            spaceBetween: 10,
           },
           1024: {
             slidesPerView: 6,
-            spaceBetween: 5,
+            spaceBetween: 10,
           },
         }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper"
+        modules={[ Autoplay]}
+        className="mySwiper my-20"
       >
         {companyLogo.map((link, index) => (
           <SwiperSlide key={index}>
-            <Image
-              height={60}
-              width={150}
+            <Image className="filter grayscale hover:filter-none duration-200 cursor-pointer"
+              height={100}
+              width={200}
               src={link}
               alt="company logo"
             ></Image>
