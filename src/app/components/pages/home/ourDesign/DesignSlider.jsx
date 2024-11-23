@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/autoplay";
 import Image from "next/image";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const OurDesign = () => {
+  const nextButtonRef = useRef(null);
+  const prevButtonRef = useRef(null);
+
   const companyLogo = [
     {
       link: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/02.jpg",
@@ -39,10 +42,17 @@ const OurDesign = () => {
     <div className="relative md:max-h-screen">
       <Swiper
         slidesPerView={1}
-        
-        navigation
+        navigation={{
+          nextEl: nextButtonRef.current,
+          prevEl: prevButtonRef.current,
+        }}
+        onInit={(swiper) => {
+          swiper.params.navigation.nextEl = nextButtonRef.current;
+          swiper.params.navigation.prevEl = prevButtonRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
         spaceBetween={10}
-       
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
@@ -67,20 +77,38 @@ const OurDesign = () => {
           },
         }}
         modules={[Navigation, Autoplay]}
-        className="my-20 custom-swiper"
+        className="my-20"
       >
         {companyLogo.map((link, index) => (
           <SwiperSlide key={index}>
-            <Image
-              className="cursor-pointer"
-              height={200}
-              width={300}
-              src={link.link}
-              alt="company logo"
-            />
+            <div className="group relative w-full ">
+              <Image
+                className="cursor-pointer group-hover:opacity-0 transition-opacity duration-300"
+                height={200}
+                width={300}
+                src={link.link}
+                alt="company logo"
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-blue-500  bg-opacity-70 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 p-4">
+                {link.description}
+              </div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
+      {/* Custom Navigation Buttons */}
+      <button
+        ref={prevButtonRef}
+        className="absolute right-14 -bottom-10 z-10  text-gray-600 px-4 py-2 rounded text-xl"
+      >
+        <FaArrowLeft />
+      </button>
+      <button
+        ref={nextButtonRef}
+        className="absolute right-5 -bottom-10 z-10  text-gray-600 px-4 py-2 rounded text-xl"
+      >
+        <FaArrowRight />
+      </button>
     </div>
   );
 };
