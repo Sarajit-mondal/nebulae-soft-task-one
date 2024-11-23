@@ -115,12 +115,15 @@ export default function NavBar() {
               </li>
             ))}
             <li className="p-2 md:p-0">
-              <button className="relative overflow-hidden w-36 h-10 text-white px-4 py-2 rounded-full border-2 -mt-2 border-blue-500 group">
-                <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap transition-colors duration-700 ease-in-out">
-                  Quick Enquiry
-                </span>
-                <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-blue-500 group-hover:border-[100px] transition-all duration-1000"></span>
-              </button>
+            <button className="relative overflow-hidden  w-36 h-10 text-blue-500 px-4 py-2 rounded-full border-2 border-blue-500 group hover:text-white">
+              {/* Text Layer */}
+              <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
+              Quick Enquiry
+              </span>
+
+              {/* Hover Effect Layer */}
+              <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-500   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
+            </button>
             </li>
           </ul>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 import About from "./components/pages/home/About";
 import Awards from "./components/pages/home/Awards";
+import Development from "./components/pages/home/development/Development";
 import NavBar from "./components/pages/home/NavBar";
 import OurDesign from "./components/pages/home/ourDesign/OurDesign";
 import OurWorks from "./components/pages/home/OurWorks";
@@ -25,6 +26,7 @@ export default function Home() {
       <Awards />
       <OurWorks />
       <OurDesign />
+      <Development />
     </div>
   );
 }
