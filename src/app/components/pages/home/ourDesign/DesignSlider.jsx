@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
 
 const OurDesign = () => {
   const nextButtonRef = useRef(null);
@@ -89,8 +90,19 @@ const OurDesign = () => {
                 src={link.link}
                 alt="company logo"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-blue-500  bg-opacity-100 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 p-4">
-                {link.description}
+              <div className="absolute inset-0 flex items-center justify-center flex-col bg-blue-500  bg-opacity-100 text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 p-4">
+                <p>{link.description}</p>
+                <Link href="http://iresearch.acodez.ca/" target="_blank">
+                  <button className="relative overflow-hidden  w-36 h-10  px-4 py-2 mt-5 rounded-full border-2 border-white-500 group text-white">
+                    {/* Text Layer */}
+                    <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
+                      View Work
+                    </span>
+
+                    {/* Hover Effect Layer */}
+                    <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-600   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
+                  </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

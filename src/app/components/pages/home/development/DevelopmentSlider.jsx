@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
 
 const TabbedSlider = () => {
   const [activeTab, setActiveTab] = useState("Web Application");
@@ -79,9 +80,22 @@ const TabbedSlider = () => {
               />
 
               {/* Description */}
-              <p className="absolute inset-0 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 bg-blue-500 text-white p-4 rounded-lg transition-opacity duration-300">
-                {item.description}
-              </p>
+              <div className="absolute inset-0 flex items-center flex-col justify-center text-center opacity-0 group-hover:opacity-100 bg-blue-500 cursor-pointer">
+                <p className=" text-white p-4 rounded-lg transition-opacity duration-300">
+                  {item.description}
+                </p>
+                <Link href={item.href} target="_blank">
+                  <button className="relative overflow-hidden  w-36 h-10  px-4 py-2 rounded-full border-2 border-white-500 group text-white">
+                    {/* Text Layer */}
+                    <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
+                      View Work
+                    </span>
+
+                    {/* Hover Effect Layer */}
+                    <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-600   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
+                  </button>
+                </Link>
+              </div>
             </div>
           </SwiperSlide>
         ))}
@@ -131,6 +145,12 @@ const data = {
       description:
         "A MEAN Stack Web Application for a Parking company in the US.",
       href: "http://trueparkings.acodez.ca/",
+    },
+    {
+      src: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/Web-Applications/elegantreport.jpg",
+      description:
+        "A MERN Stack development project for SaaS Product with a monthly subscription model.",
+      href: "http://elegantreports.com/",
     },
   ],
   "Mobile App": [
@@ -212,40 +232,40 @@ const data = {
       src: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/E-commerce/clp.jpg",
       description:
         "An unconventional ecommerce website with an interactive parallax design.",
-      buttonText: "View Work",
+      href: "http://elegantreports.com/",
     },
     {
       url: "http://kitnkaboodle.acodez.ca/",
       src: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/E-commerce/Kit-and-Kabool.jpg",
       description: "A custom-built Magento 2.0 ecommerce website.",
-      buttonText: "View Work",
+      href: "http://elegantreports.com/",
     },
     {
       url: "",
       src: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/E-commerce/Lavivo.jpg",
       description: "A custom ecommerce website in WooCommerce.",
-      buttonText: "View Work",
+      href: "http://elegantreports.com/",
     },
     {
       url: "https://rhitrition.com/",
       src: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/E-commerce/Rhitrition.jpg",
       description:
         "A custom-developed ecommerce website in WooCommerce for a leading private nutrition clinic in the UK.",
-      buttonText: "View Work",
+      href: "http://elegantreports.com/",
     },
     {
       url: "https://www.autoswithattitude.com/",
       src: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/E-commerce/awm.jpg",
       description:
         "An award-winning ecommerce website with a funky and interactive design.",
-      buttonText: "View Work",
+      href: "http://elegantreports.com/",
     },
     {
       url: "http://chymey.acodez.ca/",
       src: "https://acodez.in/wp-content/themes/acodez-theme/images/wed-design-sliders/E-commerce/Chymey.jpg",
       description:
         "A custom designed and developed ecommerce website in WooCommerce.",
-      buttonText: "View Work",
+      href: "http://elegantreports.com/",
     },
   ],
 };

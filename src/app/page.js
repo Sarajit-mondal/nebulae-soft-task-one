@@ -10,6 +10,7 @@ import Service from "./components/pages/home/Service";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import TotalAwardsAndProject from "./components/pages/home/totalAwardsAndProject/TotalAwardsAndProject";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -27,6 +28,7 @@ export default function Home() {
       <OurWorks />
       <OurDesign />
       <Development />
+      <TotalAwardsAndProject />
     </div>
   );
 }
