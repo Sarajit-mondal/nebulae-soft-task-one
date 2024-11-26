@@ -49,22 +49,21 @@ const TopSlider = () => {
         className="max-w-5xl mx-auto"
       >
         {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <a
-              href="#"
-              className="block bg-white shadow-md rounded-lg p-6 text-center"
-            >
+          <SwiperSlide key={index} className="group">
+            <a href="#" className="block bg-white  rounded-lg p-6 text-center">
               <div className="counts flex flex-col items-center">
                 <i className={`text-4xl mb-4 ${slide.icon}`}></i>
-                <h3 className="text-3xl font-bold">{slide.count}</h3>
-                <p className="mt-2 text-gray-600">{slide.text}</p>
+                <h3 className="text-6xl font-bold text-blue-500  group-hover:text-gray-600">
+                  {slide.count}
+                </h3>
+                <p className="mt-2 text-gray-600 text-xl ">{slide.text}</p>
               </div>
-              <div className="icon mt-4">
+              <div className="icon mt-40 group-hover:mt-36 duration-500">
                 <img
                   loading="lazy"
                   src={slide.img}
                   alt={slide.text}
-                  className="w-16 h-16 mx-auto"
+                  className="size-40 mx-auto "
                 />
               </div>
             </a>
