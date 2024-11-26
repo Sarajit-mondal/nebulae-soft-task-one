@@ -58,7 +58,7 @@ const TopSlider = () => {
                 </h3>
                 <p className="mt-2 text-gray-600 text-xl ">{slide.text}</p>
               </div>
-              <div className="icon mt-40 group-hover:mt-36 duration-500">
+              <div className="icon mt-48 group-hover:mt-44 duration-500">
                 <img
                   loading="lazy"
                   src={slide.img}

@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import TotalAwardsAndProject from "./components/pages/home/totalAwardsAndProject/TotalAwardsAndProject";
+import FaqSection from "./components/pages/home/FaqSection";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -29,6 +30,7 @@ export default function Home() {
       <OurDesign />
       <Development />
       <TotalAwardsAndProject />
+      <FaqSection />
     </div>
   );
 }
