@@ -21,7 +21,7 @@ const TabbedSlider = () => {
   return (
     <div className="mt-10 relative">
       {/* Tabs */}
-      <div className="flex justify-left space-x-10 mb-8">
+      <div className="flex flex-wrap justify-left space-x-10 mb-8">
         {tabs.map((tab) => (
           <button
             key={tab}

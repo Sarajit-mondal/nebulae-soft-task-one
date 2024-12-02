@@ -79,12 +79,13 @@ export default function NavBar() {
                 width={200}
                 alt="logo"
                 src="https://acodez.in/wp-content/themes/acodez-theme/images/logo.png"
+                className="w-32 h-10 md:w-40 md:h-12"
               />
             </Link>
           </div>
 
           {/* Menu Icon */}
-          <div className="md:hidden z-20">
+          <div className=" md:hidden z-20 ">
             <button onClick={toggleMenu}>
               {isOpen ? (
                 <AiOutlineClose className="w-8 h-8 font-extrabold" />
@@ -96,7 +97,7 @@ export default function NavBar() {
 
           {/* Menu Items */}
           <ul
-            className={`fixed md:static lg:flex inset-0 flex flex-col md:flex-row items-center justify-center bg-gray-800 md:bg-transparent md:space-x-8 transform ${
+            className={`fixed md:static lg:flex inset-0 flex flex-col md:flex-row items-left pt-20 md:pt-0 pl-10 md:pl-0 md:items-center md:justify-center md:bg-transparent min-h-screen bg-gray-800 md:min-h-0 md:space-x-8 transform ${
               isOpen ? "translate-y-0" : "-translate-y-[800px] md:translate-y-0"
             } transition-transform duration-300 md:transition-none`}
           >
@@ -115,15 +116,15 @@ export default function NavBar() {
               </li>
             ))}
             <li className="p-2 md:p-0">
-            <button className="relative overflow-hidden  w-36 h-10 text-blue-500 px-4 py-2 rounded-full border-2 border-blue-500 group hover:text-white">
-              {/* Text Layer */}
-              <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
-              Quick Enquiry
-              </span>
+              <button className="relative overflow-hidden  w-36 h-10 text-blue-500 px-4 py-2 rounded-full border-2 border-blue-500 group hover:text-white">
+                {/* Text Layer */}
+                <span className="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap  transition-colors duration-700 ease-in-out">
+                  Quick Enquiry
+                </span>
 
-              {/* Hover Effect Layer */}
-              <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-500   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
-            </button>
+                {/* Hover Effect Layer */}
+                <span className="absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-40   border-blue-500   p-0 group-hover:border-[100px] transition-all duration-1000 "></span>
+              </button>
             </li>
           </ul>
         </div>

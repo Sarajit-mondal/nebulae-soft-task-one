@@ -21,7 +21,7 @@ export default function Banner() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper w-1/3 mt-40"
+        className="mySwiper w-3/4 md:w-1/3 mt-40"
       >
         {services &&
           services.map((service, inx) => (
