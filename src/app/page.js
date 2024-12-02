@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import TotalAwardsAndProject from "./components/pages/home/totalAwardsAndProject/TotalAwardsAndProject";
 import FaqSection from "./components/pages/home/FaqSection";
 import Blog from "./components/pages/home/BlogSection/Blog";
+import Footer from "./components/pages/home/footer/Footer";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -33,6 +34,7 @@ export default function Home() {
       <TotalAwardsAndProject />
       <FaqSection />
       <Blog />
+      <Footer />
     </div>
   );
 }
