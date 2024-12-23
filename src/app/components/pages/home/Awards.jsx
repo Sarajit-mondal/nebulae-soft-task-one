@@ -41,7 +41,7 @@ function Awards() {
           </div>
         </div>
         {/* right side */}
-        <div className="w-full md:w-1/2 block md:relative">
+        <div className="w-full block md:w-1/2  md:relative">
           {/* awards */}
           <div className="inline-block md:absolute  w-full shadow-md md:w-2/3 md:h-[500px] lg:h-96 bg-white p-6 md:top-2/4 left-10 md:-translate-y-2/4 ">
             <h3 className="text-xl ">16 Awards</h3>
@@ -92,7 +92,7 @@ function Awards() {
 
           {/* awards company list */}
           <div
-            className="h-96  mt-5 md:h-screen w-full "
+            className="h-96 mt-5 md:h-screen w-full "
             style={{
               backgroundImage:
                 "url('https://images.unsplash.com/photo-1505085702750-96d89f461398?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXdhcmRzJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D')",

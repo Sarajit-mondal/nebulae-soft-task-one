@@ -70,7 +70,7 @@ export default function NavBar() {
           ${scrollY >= 650 && "bg-gray-800 "} 
           ${isVisible ? "translate-y-0" : "-translate-y-full "}`}
       >
-        <div className="max-w-[1180px] mx-auto flex items-center justify-between px-4">
+        <div className="max-w-96 md:max-w-[1180px] mx-auto flex items-center justify-between px-4">
           {/* Logo Section */}
           <div className="flex items-center z-50">
             <Link href="/">
@@ -85,7 +85,7 @@ export default function NavBar() {
           </div>
 
           {/* Menu Icon */}
-          <div className=" md:hidden z-20 ">
+          <div className="block md:hidden z-20 ">
             <button onClick={toggleMenu}>
               {isOpen ? (
                 <AiOutlineClose className="w-8 h-8 font-extrabold" />

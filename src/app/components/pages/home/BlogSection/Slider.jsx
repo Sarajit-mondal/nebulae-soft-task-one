@@ -14,7 +14,7 @@ const Slider = () => {
   const companyLogo = [
     {
       imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image-NEW_01-copy-3-zzqp38uobvlmqq6q1rti4g.jpg",
+        "https://acodez.in/wp-content/uploads/bfi_thumb/Lily-Ray-Feature-101odrdez35w8nnndkzk6bk.jpg",
       altText: "Nick Zviadadze – Founder of MintSEO",
       postDate: "Nov 20, 2024",
       category: {
@@ -26,7 +26,7 @@ const Slider = () => {
     },
     {
       imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_01-zz84j5u4d0c20sdgclq4u8.jpg",
+        "https://acodez.in/wp-content/uploads/2024/12/Feature-image_Artboard.jpg",
       altText: "Barry Schwartz, Founder of Search Engine Roundtable",
       postDate: "Nov 12, 2024",
       category: {
@@ -38,7 +38,7 @@ const Slider = () => {
     },
     {
       imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_02-zz84j5u4d0c20sdgclq4u8.jpg",
+        "https://acodez.in/wp-content/uploads/2024/12/Jared-Featured-Image.jpg",
       altText: "John Smith, Co-Founder of Tech Innovations",
       postDate: "Nov 5, 2024",
       category: {
@@ -49,8 +49,7 @@ const Slider = () => {
       link: "https://acodez.in/interview-series-john-smith/",
     },
     {
-      imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_03-zz84j5u4d0c20sdgclq4u8.jpg",
+      imgSrc: "https://acodez.in/wp-content/uploads/2024/07/Feature-image.jpg",
       altText: "Sarah Lee, Head of Digital Marketing",
       postDate: "Oct 28, 2024",
       category: {
@@ -74,7 +73,7 @@ const Slider = () => {
     },
     {
       imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_05-zz84j5u4d0c20sdgclq4u8.jpg",
+        "https://acodez.in/wp-content/uploads/2024/10/Feature-image-2.jpg",
       altText: "Emily Davis, CTO at Future Tech Solutions",
       postDate: "Oct 15, 2024",
       category: {
@@ -85,8 +84,7 @@ const Slider = () => {
       link: "https://acodez.in/interview-series-emily-davis/",
     },
     {
-      imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_06-zz84j5u4d0c20sdgclq4u8.jpg",
+      imgSrc: "https://acodez.in/wp-content/uploads/2024/10/Feature-imager.jpg",
       altText: "Alex Moore, Innovator in AI Development",
       postDate: "Oct 10, 2024",
       category: {
@@ -98,7 +96,7 @@ const Slider = () => {
     },
     {
       imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_07-zz84j5u4d0c20sdgclq4u8.jpg",
+        "https://acodez.in/wp-content/uploads/2024/10/Feature-image-1.jpg",
       altText: "Jessica Lin, Blockchain Pioneer",
       postDate: "Sep 30, 2024",
       category: {
@@ -110,7 +108,7 @@ const Slider = () => {
     },
     {
       imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_08-zz84j5u4d0c20sdgclq4u8.jpg",
+        "https://acodez.in/wp-content/uploads/2024/09/Feature-image-3.jpg",
       altText: "Kevin Park, Data Scientist",
       postDate: "Sep 22, 2024",
       category: {
@@ -122,7 +120,7 @@ const Slider = () => {
     },
     {
       imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_09-zz84j5u4d0c20sdgclq4u8.jpg",
+        "https://acodez.in/wp-content/uploads/2024/09/Feature-image_How-to-Fix-WordPress-Updating-Failed-Publishing-Failed-Error-1.jpg",
       altText: "Rachel Green, Cloud Computing Expert",
       postDate: "Sep 15, 2024",
       category: {
@@ -133,8 +131,7 @@ const Slider = () => {
       link: "https://acodez.in/interview-series-rachel-green/",
     },
     {
-      imgSrc:
-        "https://acodez.in/wp-content/uploads/bfi_thumb/Feature-image_10-zz84j5u4d0c20sdgclq4u8.jpg",
+      imgSrc: "https://acodez.in/wp-content/uploads/2024/07/Feature-image.jpg",
       altText: "Tom Cruise, CEO of InnovateX",
       postDate: "Sep 1, 2024",
       category: {
