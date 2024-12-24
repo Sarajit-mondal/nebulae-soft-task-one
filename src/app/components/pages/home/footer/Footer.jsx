@@ -27,59 +27,83 @@ const Footer = () => {
 
       {/* Section 2 */}
       <div className="bg-gray-800 py-12">
-        <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
-          {/* Office Locations */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Our Locations</h4>
-            <ul className="space-y-4">
-              <li>
-                <h5 className="font-bold">Delhi NCR</h5>
-                <p>1101 - 11th Floor, JMD Megapolis, Sector-48, Gurgaon</p>
-                <a
-                  href="https://www.google.com/maps"
-                  target="_blank"
-                  className="text-blue-400 hover:underline"
-                  rel="noopener noreferrer"
-                >
-                  Google Maps
-                </a>
-              </li>
-              {/* Add other locations in similar structure */}
-            </ul>
-          </div>
-
+        <div className="footer-links flex flex-wrap bg-gray-800 text-white py-10 px-4">
           {/* Navigation */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Navigation</h4>
+          <div className="w-full sm:w-1/2 lg:w-1/5 mb-6">
+            <h4 className="text-lg font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="https://acodez.in/"
-                  className="text-gray-400 hover:text-white"
-                >
+                <a href="https://acodez.in/" className="hover:text-gray-400">
                   Home
                 </a>
               </li>
               <li>
                 <a
                   href="https://acodez.in/about/"
-                  className="text-gray-400 hover:text-white"
+                  className="hover:text-gray-400"
                 >
                   About
                 </a>
               </li>
-              {/* Add other navigation links */}
+              <li>
+                <a
+                  href="https://acodez.in/awards/"
+                  className="hover:text-gray-400"
+                >
+                  Awards
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/works/"
+                  className="hover:text-gray-400"
+                >
+                  Works
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/services/"
+                  className="hover:text-gray-400"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/careers/"
+                  className="hover:text-gray-400"
+                >
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/blog/"
+                  className="hover:text-gray-400"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/contact/"
+                  className="hover:text-gray-400"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Services</h4>
+          <div className="w-full sm:w-1/2 lg:w-1/4 mb-6">
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
               <li>
                 <a
                   href="https://acodez.in/web-development/"
-                  className="text-gray-400 hover:text-white"
+                  className="hover:text-gray-400"
                 >
                   Web Development
                 </a>
@@ -87,47 +111,173 @@ const Footer = () => {
               <li>
                 <a
                   href="https://acodez.in/ux-design/"
-                  className="text-gray-400 hover:text-white"
+                  className="hover:text-gray-400"
                 >
                   UX Design
                 </a>
               </li>
-              {/* Add other service links */}
+              <li>
+                <a
+                  href="https://acodez.in/mobile-app-development/"
+                  className="hover:text-gray-400"
+                >
+                  Mobile Apps
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/digital-marketing/"
+                  className="hover:text-gray-400"
+                >
+                  Digital Marketing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/branding/"
+                  className="hover:text-gray-400"
+                >
+                  Branding
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/interface-design/"
+                  className="hover:text-gray-400"
+                >
+                  Interface Design
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/emerging-technology/"
+                  className="hover:text-gray-400"
+                >
+                  Emerging Technology Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://acodez.in/ui-development/"
+                  className="hover:text-gray-400"
+                >
+                  UI Solutions
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Contact Us</h4>
+          {/* Contact Us */}
+          <div className="w-full sm:w-1/2 lg:w-1/4 mb-6">
+            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="mailto:info@acodez.in"
-                  className="text-gray-400 hover:text-white"
-                >
+                <a href="mailto:info@acodez.in" className="hover:text-gray-400">
                   info@acodez.in
                 </a>
               </li>
               <li>
-                <a
-                  href="tel:+919544668844"
-                  className="text-gray-400 hover:text-white"
-                >
+                <a href="skype:acodez" className="hover:text-gray-400">
+                  acodez
+                </a>
+              </li>
+              <li>
+                <a href="tel:+919544668844" className="hover:text-gray-400">
                   +91 95 44 66 88 44
                 </a>
               </li>
             </ul>
-            <h4 className="text-lg font-bold mt-6 mb-4">Follow Us</h4>
-            <div className="flex space-x-4">
+
+            <h4 className="text-lg font-semibold mt-6 mb-4">Find us on</h4>
+            <ul className="flex space-x-4">
+              <li>
+                <a
+                  href="http://www.facebook.com/Acodez"
+                  className="hover:text-gray-400"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://twitter.com/#!/Acodez"
+                  className="hover:text-gray-400"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://www.linkedin.com/company/acodez-it-solutions"
+                  className="hover:text-gray-400"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://plus.google.com/u/0/101337685849536037041/posts"
+                  className="hover:text-gray-400"
+                >
+                  Google+
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div className="w-full sm:w-1/2 lg:w-1/4">
+            <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
+            <div>
+              <form
+                action="https://gmail.us21.list-manage.com/subscribe/post?u=2808ed0da090d7f72c7dca6dc&amp;id=ccc5d2490d&amp;f_id=004d90e1f0"
+                method="post"
+                target="_blank"
+              >
+                <input
+                  type="email"
+                  name="EMAIL"
+                  placeholder="Your Email Address"
+                  className="w-full px-4 py-2 mb-4 text-gray-800 border rounded focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                >
+                  Subscribe Now!
+                </button>
+              </form>
+              <p className="text-sm mt-2">
+                Enter your email ID above to subscribe to our newsletter.
+              </p>
+            </div>
+
+            <a
+              href="https://acodez.in/awards/"
+              className="block mt-6 text-sm text-blue-400 hover:text-blue-600"
+            >
+              16 International Awards
+            </a>
+
+            <div className="flex mt-4 space-x-4">
               <a
-                href="http://www.facebook.com/Acodez"
-                className="hover:text-blue-400"
+                href="https://www.google.com/partners/?hl=en-US#a_profile;idtf=4627079188"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                <img
+                  src="https://acodez.in/wp-content/themes/acodez-theme/images/google-partner.png"
+                  alt="Google Partner"
+                  className="h-12"
+                />
               </a>
-              {/* Add other social media icons */}
+              <a href="#">
+                <img
+                  src="https://acodez.in/wp-content/themes/acodez-theme/images/bing-ads.png"
+                  alt="Bing Ads"
+                  className="h-12"
+                />
+              </a>
             </div>
           </div>
         </div>
