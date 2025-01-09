@@ -14,20 +14,32 @@ function Service() {
           <div
             data-aos="fade-up"
             key={colIndex}
-            className={`flex flex-col gap-5 ${colIndex === 1 && "lg:mt-72"}`}
+            className={`flex flex-col gap-5   ${colIndex === 1 && "lg:mt-72"}`}
           >
             {column.map((card) => (
               <div
                 key={card.id}
-                className={`p-6 h-[360px] shadow-sm 
-              ${
-                isHovered === card.id
-                  ? "bg-blue-500 text-white transition-all duration-500 "
-                  : "bg-white text-black"
-              }`}
-                onMouseEnter={() => setIsHoverd(card.id)}
+                className={`relative p-6 h-[360px] shadow-sm border rounded-2xl border-blue-500 cursor-pointer overflow-hidden duration-300
+    ${isHovered === card.id ? "bg-blue-500 text-white" : "bg-white text-black"}
+  `}
+                onMouseEnter={() => {
+                  setIsHoverd(card.id);
+                }}
                 onMouseLeave={() => setIsHoverd(null)}
               >
+                {/* Centered Hover Effect */}
+                <div
+                  className={`absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-red-500 opacity-30 rounded-full 
+      ease-linear duration-700 
+      ${
+        isHovered === card.id
+          ? "w-[500px] h-[500px] scale-100"
+          : "w-0 h-0 scale-0"
+      }
+    `}
+                ></div>
+
+                {/* Card Content */}
                 <Image
                   height={50}
                   width={50}
@@ -39,7 +51,7 @@ function Service() {
                   {card.title}
                 </h3>
 
-                {/* Show after hover */}
+                {/* Show Content on Hover */}
                 {isHovered && isHovered === card.id ? (
                   card.services &&
                   card.services.map((service, serviceIndex) => (
